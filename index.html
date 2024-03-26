@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="sec1">
+        <section class="sec2">
+          <section class="sec31">
+            <section class="hora1">
+              <p>12.45</p>
+            </section>
+            <section class="hora3">
+              <i class="fa-solid fa-signal"></i>
+              <i class="fa-solid fa-wifi"></i>
+              <i class="fa-solid fa-battery-full"></i>
+            </section>
+          </section>
+          <section class="sec32">
+            <input id="screen" placeholder="0" />
+          </section>
+          <section class="sec33">
+            <section class="s41">
+              <button class="ac" onclick="cleanInput()">AC</button>
+              <button class="masmenos" onclick="cambiarSimbolo()">+/-</button>
+              <button class="porcentaje" onclick="operacionPorcentaje()">
+                %
+              </button>
+              <button class="dividir" onclick="operacionFunction('/')">
+                ÷
+              </button>
+            </section>
+            <section class="s42">
+              <button class="n7" onclick="add(7)">7</button>
+              <button class="n8" onclick="add(8)">8</button>
+              <button class="n9" onclick="add(9)">9</button>
+              <button class="multiplicar" onclick="operacionFunction('*')">
+                ×
+              </button>
+            </section>
+            <section class="s43">
+              <button class="n4" onclick="add(4)">4</button>
+              <button class="n5" onclick="add(5)">5</button>
+              <button class="n6" onclick="add(6)">6</button>
+              <button class="resta" onclick="operacionFunction('-')">-</button>
+            </section>
+            <section class="s44">
+              <button class="n1" onclick="add(1)">1</button>
+              <button class="n2" onclick="add(2)">2</button>
+              <button class="n3" onclick="add(3)">3</button>
+              <button class="suma" onclick="operacionFunction('+')">+</button>
+            </section>
+            <section class="s45">
+              <button
+                style="width: 100px; border-radius: 30px"
+                class="n0"
+                onclick="add(0)"
+              >
+                0
+              </button>
+              <button class="coma" onclick="addComa()">,</button>
+
+              <button class="igual" onclick="igual()">=</button>
+            </section>
+          </section>
+          <section class="sec34">
+            <section class="barra"></section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1239269ca9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
